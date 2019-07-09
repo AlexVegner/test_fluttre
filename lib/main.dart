@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_test/stab.dart';
 
-void main() => runApp(MyApp());
+import 'models/User.dart';
+
+void main() { 
+  List<User> users = Stab.instance.users;
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
